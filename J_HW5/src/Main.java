@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 import java.util.Map;
 
 public class Main {
@@ -20,6 +19,12 @@ public class Main {
         int[] listNum = new int[]{5, 2, 3, 8, 10, 5, -1};
         Task3.heapsort(listNum);
         for (int el : listNum) System.out.printf("%d ", el);
+
+//        ------------ Task 4 ___________________
+//На шахматной доске расставить 8 ферзей так, чтобы они не били друг друга.
+        QueenBoard board = new QueenBoard(8);
+        board.placeQueens(0);
+        board.printBoard();
     }
 }
 
