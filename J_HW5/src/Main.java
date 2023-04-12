@@ -16,7 +16,10 @@ public class Main {
         System.out.println("Имена, отсортированные по убыванию популярности: ");
         Task2.sortName(mapName);
 
-
+//        ------------ Task 3 ___________________
+        int[] listNum = new int[]{5, 2, 3, 8, 10, 5, -1};
+        Task3.heapsort(listNum);
+        for (int el : listNum) System.out.printf("%d ", el);
     }
 }
 
